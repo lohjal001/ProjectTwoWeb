@@ -99,7 +99,7 @@
     <input type="text" id="city" name="city"><br>
     <label for="hobby">Hobby:</label><br>
     <input type="text" id="hobby" name="hobby"><br><br>
-    <input type="submit" value="Submit">
+    <button id=submit onclick=location.href='/addStudent'>Submit</button>
 </form>
 </body>
 </html>

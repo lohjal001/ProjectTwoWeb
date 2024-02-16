@@ -3,4 +3,5 @@ allFromCourses; SELECT ID, Namn, YHP, Beskrivning FROM kurser ORDER BY ID ASC;gr
 allFromAttendance; SELECT n.ID, s.FNamn, s.LNamn, k.Namn FROM närvaro n join studenter s on n.studentID = s.ID join kurser k on n.kursID = k.ID ORDER BY ID ASC;gritacademy;localhost;4306;user;user
 allCoursesForStudent;SELECT s.ID, s.FNamn, s.LNamn, k.Namn, k.YHP, k.beskrivning FROM studenter s JOIN närvaro n ON n.studentID=s.ID JOIN kurser k ON k.ID=n.kursID WHERE s.FNamn='{0}' AND s.LNamn='{1}' AND s.ID='{2}' ORDER BY s.ID ASC;gritacademy;localhost;4306;user;user
 allCoursesForStudentNoID; SELECT s.ID, s.FNamn, s.LNamn, k.Namn, k.YHP, k.beskrivning FROM studenter s JOIN närvaro n ON n.studentID=s.ID JOIN kurser k ON k.ID=n.kursID WHERE s.FNamn='{0}' AND s.LNamn='{1}' ORDER BY s.ID ASC;gritacademy;localhost;4306;user;user
-addStudentToStudents;INSERT INTO studenter (FNamn, LNamn, stad, hobby) VALUES (?,?,?,?);gritacademy;localhost;4306;user1;user1
+addStudentToStudents;INSERT INTO studenter (FNamn, LNamn, stad, hobby) VALUES s.FNamn='{0}' AND s.LNamn='{1}' AND s.Stad='{2}' AND s.Hobby'{3}';gritacademy;localhost;4306;user1;user1
+addCourseToCourses;INSERT INTO kurser (Namn, YHP, beskrivning) VALUES k.Namn'{0}' AND k.YHP'{1}' AND k.beskrivning'{2}';gritacademy;localhost;4306;user1;user1

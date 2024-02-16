@@ -97,7 +97,7 @@
     <input type="text" id="YHP" name="YHP"><br>
     <label for="description">Description:</label><br>
     <input type="text" id="description" name="description"><br><br>
-    <input type="submit" value="Search">
+    <input type="submit" value="Submit">
 </form>
 </body>
 </html>
